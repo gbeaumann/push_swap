@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 09:54:45 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/25 11:44:35 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/25 14:12:03 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,15 @@ void	stack_abis_init(t_strct *swap)
 	swap->new_tab[i] = swap->stack_a[i];
     i++;
   }
+}
+
+long long int *ft_malloc(long long int len)
+{
+	long long int	*tab;
+    tab = malloc((len + 1) * sizeof(long long int));
+	if (!tab)
+		return (0);
+    return (tab);
 }
 
 void	free_all(t_strct *swap)

@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 15:17:48 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/25 11:47:14 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/25 14:42:01 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ void array_to_int(t_strct *swap)
     }
 	stack_abis_init(swap);
 	ft_sorted_index(swap);
-	ft_sort(swap);
+	if (swap->len_a == 3)
+		three_args(swap);
+	else
+		ft_sort(swap);
 }

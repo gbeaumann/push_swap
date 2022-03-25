@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 10:18:41 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/25 11:46:25 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/25 14:50:03 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,6 @@ void			print_stack_abis(t_strct *swap);
 void			ft_sorted_index(t_strct *swap);
 void			print_new_tab(t_strct *swap);
 void			ft_sort(t_strct *swap);
+int				three_args(t_strct *swap);
 
 #endif

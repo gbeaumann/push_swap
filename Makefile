@@ -9,7 +9,8 @@ SRC = 	main.c\
 		push_swap_index.c\
 		push_swap.c\
 		print_stacks.c\
-		radix.c
+		radix.c\
+		exception.c
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.c=.o)
 
