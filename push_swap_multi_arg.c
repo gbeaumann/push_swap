@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 11:09:27 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/17 15:46:34 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/29 16:20:30 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*array_filling(char *str)
 	i = 0;
 	while (str[i])
 		i++;
-	res = malloc((i + 1) *sizeof(*res));
+	res = malloc((i + 1) * sizeof(*res));
 	if (!res)
 		return (NULL);
 	i = 0;
@@ -31,24 +31,24 @@ char	*array_filling(char *str)
 	}
 	res[i] = '\0';
 	return (res);
-	
 }
-char    **into_array(t_strct *swap, int argc, char **argv)
-{
-    int		i;
-    int		j;
 
-    i = 0;
+char	**into_array(t_strct *swap, int argc, char **argv)
+{
+	int	i;
+	int	j;
+
+	i = 0;
 	j = 1;
-    swap->tab = malloc((argc) * sizeof(swap->tab));
+	swap->tab = malloc((argc) * sizeof(swap->tab));
 	if (!swap->tab)
 		return (NULL);
-    while (j < (argc))
-    {
-     swap->tab[i] = array_filling(argv[j]);
-	 i++;
-	 j++;
-    }
+	while (j < (argc))
+	{
+		swap->tab[i] = array_filling(argv[j]);
+		i++;
+		j++;
+	}
 	swap->tab[i] = NULL;
 	return (swap->tab);
 }

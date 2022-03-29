@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/03/29 15:57:24 by gbeauman          #+#    #+#              #
+#    Updated: 2022/03/29 16:38:55 by gbeauman         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = push_swap
 CC = gcc
 SRC = 	main.c\
@@ -6,11 +18,12 @@ SRC = 	main.c\
 		push_swap_init.c\
 		push_swap_multi_arg.c\
 		push_swap_fonctions.c\
+		push_swap_fonctions_2.c\
 		push_swap_index.c\
 		push_swap.c\
-		print_stacks.c\
-		radix.c\
-		exception.c
+		push_swap_print_stacks.c\
+		push_swap_radix.c\
+		push_swap_exception.c
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.c=.o)
 

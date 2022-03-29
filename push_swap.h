@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 10:18:41 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/25 14:50:03 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/29 16:56:41 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include	"./libft/libft.h"
 # include	"./printf/ft_printf.h"
 
-typedef struct	s_strct
+typedef struct ammakes_strct
 {
 	long long int	*stack_a;
 	long long int	*stack_b;
@@ -25,14 +25,14 @@ typedef struct	s_strct
 	int				len_a;
 	int				len_b;
 	char			**tab;
-}				t_strct;
+}					t_strct;
 
 int				main(int argc, char **argv);
 void			array_to_int(t_strct *swap);
-long long int 	*ft_malloc(long long int len);
-void	    	strct_init(t_strct *swap);
-int 			check_double(t_strct *swap, int j);
-int 			check_alpha(t_strct *swap, int i);
+long long int	*ft_malloc(long long int len);
+void			strct_init(t_strct *swap);
+int				check_double(t_strct *swap, int j);
+int				check_alpha(t_strct *swap, int i);
 char			**into_array(t_strct *swap, int argc, char **argv);
 char			*array_filling(char *str);
 int				check_max_min_int(long long value, t_strct *swap);
@@ -55,6 +55,8 @@ void			print_stack_abis(t_strct *swap);
 void			ft_sorted_index(t_strct *swap);
 void			print_new_tab(t_strct *swap);
 void			ft_sort(t_strct *swap);
-int				three_args(t_strct *swap);
+void			three_args(t_strct *swap);
+void			five_args(t_strct *swap);
+int				ft_check_sort_stack_a(t_strct *swap);
 
 #endif
