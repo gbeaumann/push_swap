@@ -6,7 +6,7 @@
 /*   By: gbeauman <gbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 10:18:41 by gbeauman          #+#    #+#             */
-/*   Updated: 2022/03/29 16:56:41 by gbeauman         ###   ########.fr       */
+/*   Updated: 2022/03/31 14:10:50 by gbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include	"./libft/libft.h"
 # include	"./printf/ft_printf.h"
 
-typedef struct ammakes_strct
+typedef struct s_strct
 {
 	long long int	*stack_a;
 	long long int	*stack_b;
